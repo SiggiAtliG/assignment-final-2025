@@ -78,3 +78,11 @@
   line-height: 1.5;
   cursor: pointer;
 }
+
+.error {
+  color: #ff0000;
+  margin: 1rem 0;
+  font-weight: bold;
+  width: 85%;
+  text-align: center;
+}
