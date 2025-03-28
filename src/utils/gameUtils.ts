@@ -23,6 +23,20 @@ export function calculateWinner(
   return null;
 }
 
+/**
+ * Checks if the game is a draw.
+ * A draw occurs when all cells are filled and there is no winner.
+ */
+export function isDraw(squares: Sign[] | string[]): boolean {
+  // If there's a winner, it's not a draw
+  if (calculateWinner(squares)) {
+    return false;
+  }
+  
+  // If all cells are filled, it's a draw
+  return squares.every(square => square !== "");
+}
+
 export function getPlayerNameFromSign(
   sign: Sign | string,
   game: Game
