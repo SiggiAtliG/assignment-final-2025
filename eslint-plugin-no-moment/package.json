@@ -1,0 +1,17 @@
+{
+  "name": "eslint-plugin-no-moment",
+  "version": "1.0.0",
+  "description": "ESLint plugin that forbids the use of moment.js",
+  "main": "index.js",
+  "author": "SiggiAtliG",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "moment"
+  ],
+  "peerDependencies": {
+    "eslint": ">=6.0.0"
+  }
+} 

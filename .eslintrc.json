@@ -1,3 +1,7 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "plugin:no-moment/recommended"],
+  "plugins": ["no-moment"],
+  "rules": {
+    "no-moment/no-moment": "error"
+  }
 }
