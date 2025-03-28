@@ -1,0 +1,6 @@
+.git
+.github
+README.md
+.gitignore
+e2e/
+node_modules/ 
