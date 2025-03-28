@@ -5,7 +5,7 @@ export function initDatadogRum() {
     datadogRum.init({
       applicationId: process.env.NEXT_PUBLIC_DATADOG_APPLICATION_ID || '',
       clientToken: process.env.NEXT_PUBLIC_DATADOG_CLIENT_TOKEN || '',
-      site: process.env.NEXT_PUBLIC_DATADOG_SITE || 'datadoghq.com',
+      site: (process.env.NEXT_PUBLIC_DATADOG_SITE || 'datadoghq.com') as 'datadoghq.com' | 'datadoghq.eu' | 'us3.datadoghq.com' | 'us5.datadoghq.com' | 'ap1.datadoghq.com' | 'ddog-gov.com',
       service: 'tic-tac-toe',
       env: process.env.NODE_ENV,
       version: '1.0.0',
